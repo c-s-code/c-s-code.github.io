@@ -2,10 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OER Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Beyond the hidden curriculum of resilience | Index</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>Hello World. This is the OER homepage</p>
+    <div data-include="partials/header.html"></div>
+
+    <main id="main-content">
+      <h1>Beyond the hidden curriculum of resilience</h1>
+      <div data-include="partials/time/total-time-commitment.html"></div>
+
+      <!-- Text Section - Site Welcome and fallback -->
+      <section class="text-block">
+        <div class="md-content" data-md-src="content/md/index/welcome.md">
+          This website makes use of JavaScript to correctly load and display
+          pages.
+          <br />If you have issues viewing content, please disable any script
+          blocking addons. Please contact me via my Edinburgh Uni student email
+          address if issues persist. <br /><a href="downloads.html"
+            >You can download PDF versions of all page content, plus evidence
+            images via the downloads page.</a
+          >
+        </div>
+      </section>
+
+      <!-- Text Section - About Me -->
+      <section class="text-block">
+        <div class="md-content" data-md-src="content/md/index/about.md"></div>
+      </section>
+
+      <!-- Back and Forward -->
+      <nav class="page-nav page-nav--forward-only" aria-label="Forward">
+        <a
+          href="intro.html"
+          aria-label="Forward to Introduction"
+          title="Forward to Introduction"
+        >
+          <span class="page-nav-text">Introduction</span>
+          <span class="page-nav-chevron" aria-hidden="true">›</span>
+        </a>
+      </nav>
+
+      <div data-include="partials/site-explore.html"></div>
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
